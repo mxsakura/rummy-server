@@ -1,0 +1,21 @@
+{
+    "code": 200,
+    "msg": "请求成功",
+    "data": [
+        {
+            "id": 1,
+            "icon": "/static/apps/1.jpg",
+            "name": "Lumbercraft"
+        },
+        {
+            "id": 2,
+            "icon": "/static/apps/2.jpg",
+            "name": "Tricky Track 3D"
+        },
+        {
+            "id": 3,
+            "icon": "/static/apps/3.jpg",
+            "name": "Tile Connect - Free Tile Puzzle Match Brain Game'"
+        }
+    ]
+}
