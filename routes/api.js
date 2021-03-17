@@ -67,9 +67,10 @@ router.get('/recommended', function (req, res, next) {
 function checkUpdate(params, callback) {
     let result = {
         appVersion: "1.0.1",
-        wgtUrl: "http://172.16.20.114:3000/file/__UNI__8F97DDA.wgt",
-        pkgUrl: "http://172.16.20.114:3000/file/"
+        wgtUrl: "https://server.nooapp.com/file/__UNI__8F97DDA.wgt",
+        pkgUrl: "https://server.nooapp.com/file/"
     }
+    console.log(params)
     // 这里简单判定下，不相等就是有更新。
     var currentVersions = params.appVersion.split('.');
     var resultVersions = result.appVersion.split('.');
@@ -98,7 +99,9 @@ function checkUpdate(params, callback) {
     }
 }
 
-
+/**
+ * 
+ */
 router.get('/app_update', function (req, res) {
     var appName = req.query.name;
     var appVersion = req.query.version;
