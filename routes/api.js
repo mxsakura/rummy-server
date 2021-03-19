@@ -66,7 +66,7 @@ router.get('/recommended', function (req, res, next) {
 // TODO 查询配置文件或者数据库信息来确认是否有更新  
 function checkUpdate(params, callback) {
     let result = {
-        appVersion: "1.0.1",
+        appVersion: "1.0.0",
         wgtUrl: "https://server.nooapp.com/file/__UNI__8F97DDA.wgt",
         pkgUrl: "https://server.nooapp.com/file/"
     }
